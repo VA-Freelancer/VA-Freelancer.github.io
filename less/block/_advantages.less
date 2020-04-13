@@ -1,0 +1,69 @@
+@white: #f5f5f5;
+@black: #000000;
+@one-color: #8C8C87;
+@two-color: #BFBAB0;
+@three-color: #0D0D0D;
+@four-color:#C4C4C4;
+.advantages{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(23, 23, 29, 0.81) 20.31%, rgba(23, 23, 29, 0.78) 58.33%, rgba(23, 23, 29, 0.88) 79.69%, #17171d 100%),  url('../img/backgrond-advetage.jpeg');
+    background-blend-mode: normal, darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.advantages__wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.advantages__header{
+    position: relative;
+    line-height: 1.1;
+    text-align: left;
+    margin-bottom: 60px;
+    &::before{
+        margin-left: -49px;
+        position: absolute;
+        content: '';
+        display: block;
+        left: -100%;
+        top: 50%;
+        z-index: 12;
+        height: 1px;
+        width: 100%;
+        background-color: @one-color;
+    }
+}
+.advantages__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.advantages__list-item{
+    position: relative;
+    list-style: none;
+    flex-grow: 2;
+    max-width: 240px;
+    margin-bottom: 70px;
+    margin-left: 45px;
+    &:nth-child(3), &:nth-child(6){
+        margin-right: 0;
+    }
+    min-height: 115px;
+}
+.advantages__list-header{
+    font-family: Play;
+    font-size: 24px;
+    line-height: 1.1;
+}
+.advantages__list-icon{
+    position: absolute;
+    top: 24px;
+    left: -40px;
+    height: 24px;
+}
+.advantages__list-text{
+    font-size: 18px;
+}

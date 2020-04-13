@@ -1,0 +1,60 @@
+.created {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(23, 23, 29, 0.81) 20.31%, rgba(23, 23, 29, 0.78) 58.33%, rgba(23, 23, 29, 0.88) 79.69%, #17171d 100%),  url('../img/backgrond-create.jpg');
+
+    background-blend-mode: normal, darken;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.created__wrapper {
+
+}
+.created__header {
+    position: relative;
+    margin-bottom: 65px;
+    text-align: left;
+    &::before{
+        margin-left: -49px;
+        position: absolute;
+        content: '';
+        display: block;
+        left: -100%;
+        top: 50%;
+        z-index: 12;
+        height: 1px;
+        width: 100%;
+        background-color: @one-color;
+    }
+}
+.created__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.created__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 160px;
+    text-align: center;
+    max-width: 121px;
+}
+.created__item-number {
+    font-size: 72px;
+    line-height: 84px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.created__item-text {
+    font-family: 'Play';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+}
+.created__description {
+}

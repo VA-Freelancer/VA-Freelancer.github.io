@@ -1,24 +1,43 @@
 @white: #f5f5f5;
-@black: #000000;
+@black: rgba(23, 23, 29, 1);
 @one-color: #8C8C87;
 @two-color: #BFBAB0;
 @three-color: #0D0D0D;
 @four-color:#C4C4C4;
 .about{
+    background: radial-gradient(50% 50% at 50% 50%, rgba(23, 23, 29, 0.81) 20.31%, rgba(23, 23, 29, 0.78) 58.33%, rgba(23, 23, 29, 0.88) 79.69%, #17171d 100%),  url('../img/backgrond-about-us.jpg');
+    background-blend-mode: normal, darken;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     position: relative;
-    padding-top: 65px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 .about__left {
     width: 50%;
     padding-left: 5px;
     margin-right: 84px;
+    
 }
 .about__left-header {
+    position: relative;
     line-height: 1.1;
     text-align: left;
     margin-bottom: 90px;
-    
+    &::before{
+        margin-left: -49px;
+        position: absolute;
+        content: '';
+        display: block;
+        left: -100%;
+        top: 50%;
+        z-index: 12;
+        height: 1px;
+        width: 100%;
+        background-color: @one-color;
+    }
 }
 .about__left-text {
     font-weight: 400;
@@ -26,7 +45,7 @@
     text-align: left;
     max-width: 470px;
     height: 272px;
-    margin-bottom: 42px;
+    // margin-bottom: 42px;
 }
 .about__left-button{
     display: flex;
@@ -36,11 +55,10 @@
     font-weight: 700;
     line-height: 1.1;
     text-decoration: none;
-    padding: 13px 45px;
-    background: @white;
-    color: @black;
-    border-radius: 5px;
-    margin-bottom: 27px;
+    padding: 12px 45px;
+    background-color: #0D0D0D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
 }
 .about__right {
     width: 50%;
