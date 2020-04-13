@@ -1,19 +1,37 @@
-$('body').append('<div class="upbtn"></div>');            
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-        $('.upbtn').css({
-            bottom: '-110px',
-            right: '-109px'
-        });
-        } else {
-        $('.upbtn').css({
-            bottom: '-300px'
-        });
+
+$(document).ready(function(){
+const scrollBtn = $('.scroll-to-top-btn');
+$(window).scroll(function(){
+    if ( $(this).scrollTop() > 500){
+        scrollBtn.fadeIn();
+    } else {
+        scrollBtn.fadeOut();
     }
-});
-$('.upbtn').on('click',function() {
-    $('html, body').animate({
-        scrollTop: 0
-    }, 500);
+})
+scrollBtn.click(function(){
+    $('html, body').animate({ scrollTop: 0 }, 360);
     return false;
+})
 });
+// функция возвращает cookie с именем name, если есть, если нет, то undefined    
+function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+let cookiecook = getCookie("cookiecook"),
+cookiewin = document.getElementsByClassName('cookie_notice')[0];    
+// проверяем, есть ли у нас cookie, с которой мы не показываем окно и если нет, запускаем показ
+if (cookiecook != "no") {
+    // показываем    
+    cookiewin.style.display="block"; 
+    // закрываем по клику
+    document.getElementById("cookie_close").addEventListener("click", function(){
+        cookiewin.style.display="none";    
+        // записываем cookie на 1 день, с которой мы не показываем окно
+        let date = new Date;
+        date.setDate(date.getDate() + 1);    
+        document.cookie = "cookiecook=no; path=/; expires=" + date.toUTCString();               
+    });
+}
