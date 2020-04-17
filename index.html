@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio VI ANT STUDIO & Vikulov Andrey</title>
+    <!-- подключаем шрифты -->
     <link href="http://allfont.ru/allfont.css?fonts=capture-it" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- подключаем стили библиотеки animate -->
+    <link rel="stylesheet" href="./libs/animate/animate.min.css">
+    <!-- подключаем главные стили  -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -16,16 +20,27 @@
         <div class="container">
             <div class="header__nav-wrapper">
                 <div class="header__logo">
-                    <!-- <div class="header__logo-img">
-                        <img src="./img/logo.png" alt="Логотип">
-                    </div> -->
+                    <div class="menu__mobile-wrapper">
+                        
+                        <nav class="menu__mobile">
+                            <a href="#" class="menu__mobile-link">ГЛАВНАЯ</a>
+                            <a href="#" class="menu__mobile-link">О СТУДИИ</a>
+                            <a href="#" class="menu__mobile-link">БЛОГ</a>
+                            <a href="#" class="menu__mobile-link">ПОРТФОЛИО</a>
+                            <a href="#" class="menu__mobile-link">КОНТАКТЫ</a>
+                        </nav>
+                        <a href="#" class="menu__mobile-btn">
+                            <span></span>
+                        </a> 
+                    </div>
+                    
                     <div class="header__logo-desc">
                         <div class="desc__top">Vi Ant <span>Studio</span></div>
                         <div class="desc__bottom">работаем по плану</div>
                     </div>
                 </div>
                 <nav class="header_nav">
-                    <a href="#" class="header__nav-link header__nav-link--active">ГЛАВНАЯ</a>
+                    <a href="#" class="header__nav-link">ГЛАВНАЯ</a>
                     <a href="#" class="header__nav-link">О СТУДИИ</a>
                     <a href="#" class="header__nav-link">БЛОГ</a>
                     <a href="#" class="header__nav-link">ПОРТФОЛИО</a>
@@ -61,7 +76,7 @@
 <!-- главное тело страницы с секциями -->
     <main class="main" id="main">
         <!-- секция о компании -->
-        <section class="about height-section">
+        <section class="about height-section hidden">
             <div class="container">
                 <div class="row">
                     <div class="about__left">
@@ -73,16 +88,16 @@
                     </div>
                     <div class="about__right">
                         <div class="avatar__wrapper">
-                            <img class="about__right-avatar--top" src="./img/avatar-top.png" alt="">
-                            <img src="./img/avatar.png" alt="" class="about__right-avatar">
-                            <img class="about__right-avatar--bottom" src="./img/avatar-bottom.png" alt="">
+                            <img class="about__right-avatar--top" src="./img/avatar-top-min.png" alt="">
+                            <img src="./img/avatar-min.png" alt="" class="about__right-avatar">
+                            <img class="about__right-avatar--bottom" src="./img/avatar-bottom-min.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- секция с преимуществами -->
-        <section class="advantages height-section">
+        <section class="advantages height-section hidden">
             <div class="container">
                 <div class="row">
                     <div class="advantages__wrapper">
@@ -157,7 +172,7 @@
             </div>
         </section>
         <!-- секция с портфолио -->
-        <section class="portfolio height-section">
+        <section class="portfolio height-section hidden">
             <div class="container">
                 <div class="row">
                     <div class="portfolio__wrapper">
@@ -168,8 +183,8 @@
                                 <div class="portfolio__category">
                                     Category: <span>Mini-Site</span>
                                 </div>
-                                <a href="portfolio__item-link">
-                                    <img class="portfolio__item-image" src="./img/portfolio-1.png" alt="">
+                                <a data-modal="1" href="#" class="js-open-modal portfolio__item-link">
+                                    <img class="portfolio__item-image" src="./img/portfolio-1-min.png" alt="">
                                 </a>
                             </div>
                             <!-- элемент портфолио -->
@@ -177,15 +192,8 @@
                                 <div class="portfolio__category">
                                     Category: <span>Landing</span>
                                 </div>
-                                <img class="portfolio__item-image" src="./img/portfolio-2.png" alt="">
-                            </div>
-                            <!-- элемент портфолио -->
-                            <div class="portfolio__item">
-                                <div class="portfolio__category">
-                                    Category: <span>Landing</span>
-                                </div>
-                                <a href="portfolio__item-link">
-                                    <img class="portfolio__item-image" src="./img/portfolio-3.png" alt="">
+                                <a data-modal="2" href="#" class="js-open-modal portfolio__item-link">
+                                    <img class="portfolio__item-image" src="./img/portfolio-2-min.png" alt="">
                                 </a>
                             </div>
                             <!-- элемент портфолио -->
@@ -193,11 +201,25 @@
                                 <div class="portfolio__category">
                                     Category: <span>Landing</span>
                                 </div>
-                                <a href="portfolio__item-link">
-                                    <img class="portfolio__item-image" src="./img/portfolio-4.png" alt="">
+                                <a data-modal="3" href="#" class="js-open-modal portfolio__item-link">
+                                    <img class="portfolio__item-image" src="./img/portfolio-3-min.png" alt="">
+                                </a>
+                            </div>
+                            <!-- модальное окно -->
+
+                            <!-- элемент портфолио -->
+                            <div class="portfolio__item">
+                                <div class="portfolio__category">
+                                    Category: <span>Landing</span>
+                                </div>
+                                <a data-modal="4" href="#" class="js-open-modal portfolio__item-link">
+                                    <img class="portfolio__item-image" src="./img/portfolio-4-min.png" alt="">
                                 </a>
                             </div>
                         </div>
+
+                        <!-- модальное окно -->
+                        
                         <!-- кнопка смотреть все портфолио -->
                         <a href="#" class="portfolio__button">Смотреть все</a>
                     </div>
@@ -205,7 +227,7 @@
             </div>
         </section>
         <!-- секция с цифрами проектами -->
-        <section class="created height-section">
+        <section class="created height-section hidden">
             <div class="container">
                 <div class="row">
                     <div class="created__wrapper">
@@ -269,7 +291,7 @@
             </div>
         </section>
         <!-- сецкция с формой и возможностью написать -->
-        <section class="contact height-section">
+        <section class="contact height-section hidden">
             <div class="container">
                 <div class="row">
                     <div class="contact__wrapper">
@@ -325,7 +347,7 @@
         </section>
     </main>
     <!-- футер -->
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="container">
             <div class="row">
                 <!-- колонка футера -->
@@ -445,7 +467,66 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- модальные окна для портфолио -->
+    <!-- 1 -->
+    <div class="modal" data-modal="1">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <div class="modal__wrapper">
+            <div class="modal_txt">
+                <h2>Сайт портфоли Викулова Андрея</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe, amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam ullam pariatur, quis in? Suscipit!</p>
+            </div>
+            <div class="clearfix"></div>  
+            <img class="modal__image" src="./img/portfolio-1-min.png" alt="">
+        </div>
+        
+    </div>
+    <!-- 2 -->
+    <div class="modal" data-modal="2">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <div class="modal__wrapper">
+            <div class="modal_txt">
+                <h2>Сайт портфоли Викулова Андрея</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe, amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam ullam pariatur, quis in? Suscipit!</p>
+            </div>
+            <div class="clearfix"></div>  
+            <img class="modal__image" src="./img/portfolio-2-min.png" alt="">
+        </div>
+        
+    </div>
+    <!-- 3 -->
+    <div class="modal" data-modal="3">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <div class="modal__wrapper">
+            <div class="modal_txt">
+                <h2>Сайт портфоли Викулова Андрея</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe, amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam ullam pariatur, quis in? Suscipit!</p>
+            </div>
+            <div class="clearfix"></div>  
+            <img class="modal__image" src="./img/portfolio-3-min.png" alt="">
+        </div>
+        
+    </div>
+    <!-- 4 -->
+    <div class="modal" data-modal="4">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <div class="modal__wrapper">
+            <div class="modal_txt">
+                <h2>Сайт портфоли Викулова Андрея</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe, amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam ullam pariatur, quis in? Suscipit!</p>
+            </div>
+            <div class="clearfix"></div>  
+            <img class="modal__image" src="./img/portfolio-4-min.png" alt="">
+        </div>
+        
+    </div>
+    <!-- подложка-->
+    <div class="overlay js-overlay-modal"></div>
+    <!--/////// модальные окна для портфолио-->
     <!-- куки -->
+    
     <div class="cookie_notice">
         Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.
         <div>
@@ -453,6 +534,14 @@
             <a class="cookie_btn" href="#politika">Политика конфиденциальности</a>
         </div>
     </div>
+    <div class="exitblock">
+        <div class="fon"></div>    
+        <div class="modaltext">    
+            Уже уходите, посмотрите наш <a href="">блог</a> и <a href="">портфолио</a>.
+        </div>
+        <div class="closeblock">+</div>
+    </div>
+    <!-- кнопка прокрутки наверх -->
     <button class="scroll-to-top-btn">
         <img src="./img/arrow.svg" alt="">
     </button>
