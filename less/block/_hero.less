@@ -21,12 +21,19 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    @media (min-width: 560px){
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+    }
 }
 .hero__top-left {
     font-family: 'Capture it';
     text-transform: uppercase;
     font-size: 44px;
     line-height: 1.15;
+    z-index: 1;
     @media (min-width: 890px){
         font-size: 64px;
     }
@@ -39,10 +46,11 @@
 }
 .hero__top-right {
     position: relative;
-    max-width: 177px;
-    font-size: 16px;
+    max-width: 100%;
+    font-size: 14px;
     line-height: 1.15;
     color: @one-color;
+    
     @media (min-width: 560px){
         max-width: 240px;
         font-size: 18px;
@@ -72,11 +80,17 @@
 }
 .hero__bottom {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     font-size: 44px;
     line-height: 1.15;
     font-family: 'Capture it';
     text-transform: uppercase;
+    @media (min-width: 380px){
+        font-size: 34px;
+    }
+    @media (min-width: 560px){
+        justify-content: flex-end;
+    }
     @media (min-width: 672px){
         font-size: 64px;
     }
