@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="xyz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio VI ANT STUDIO & Vikulov Andrey</title>
     <!-- подключаем шрифты -->
     <link href="http://allfont.ru/allfont.css?fonts=capture-it" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- подключаем стили библиотеки animate -->
     <link rel="stylesheet" href="./libs/animate/animate.min.css">
     <!-- подключаем главные стили  -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <!-- первый экран (бэкгроунд вставлен в хедер) -->
-    <header class="header">
+    <header class="header hidden">
         <div class="container">
             <div class="header__nav-wrapper">
                 <div class="header__logo">
                     <div class="menu__mobile-wrapper">
-                        
+
                         <nav class="menu__mobile">
                             <a href="#" class="menu__mobile-link">ГЛАВНАЯ</a>
                             <a href="#" class="menu__mobile-link">О СТУДИИ</a>
@@ -31,9 +37,9 @@
                         </nav>
                         <a href="#" class="menu__mobile-btn">
                             <span></span>
-                        </a> 
+                        </a>
                     </div>
-                    
+
                     <div class="header__logo-desc">
                         <div class="desc__top">Vi Ant <span>Studio</span></div>
                         <div class="desc__bottom">работаем по плану</div>
@@ -69,21 +75,26 @@
                     <div class="hero__button-wrapper">
                         <a href="#" class="hero__button">Просмотреть портфолио</a>
                     </div>
-                </div>      
+                </div>
             </div>
         </div>
     </header>
-<!-- главное тело страницы с секциями -->
+    <!-- главное тело страницы с секциями -->
     <main class="main" id="main">
         <!-- секция о компании -->
-        <section class="about height-section">
+        <section class="about height-section hidden">
             <div class="container">
                 <h2 class="about__left-header">О Студии</h2>
-                <div class="row"> 
-                    
+                <div class="row">
+
                     <div class="about__left">
-                        <p class="about__left-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat sed amet et lobortis sed. Aliquam sapien sed lectus sed ac. Pulvinar hendrerit sagittis, elementum nisl. In fames nisi, maecenas eu viverra tincidunt tellus dictum sapien. Elementum ac quis quisque lectus. 
-                        Purus ut blandit et ultrices. Dolor morbi dolor pretium sed massa nisi, scelerisque urna. Malesuada viverra nam ac orci vitae et ac. Lectus condimentum sit lorem faucibus orci lacinia felis enim. Ac sed in amet diam mollis. Sed tellus turpis imperdiet in.
+                        <p class="about__left-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                            consequat sed amet et lobortis sed. Aliquam sapien sed lectus sed ac. Pulvinar hendrerit
+                            sagittis, elementum nisl. In fames nisi, maecenas eu viverra tincidunt tellus dictum sapien.
+                            Elementum ac quis quisque lectus.
+                            Purus ut blandit et ultrices. Dolor morbi dolor pretium sed massa nisi, scelerisque urna.
+                            Malesuada viverra nam ac orci vitae et ac. Lectus condimentum sit lorem faucibus orci
+                            lacinia felis enim. Ac sed in amet diam mollis. Sed tellus turpis imperdiet in.
                         </p>
                         <a href="" class="about__left-button">Подробнее</a>
                     </div>
@@ -98,7 +109,7 @@
             </div>
         </section>
         <!-- секция с преимуществами -->
-        <section class="advantages height-section">
+        <section class="advantages height-section hidden">
             <div class="container">
                 <div class="row">
                     <div class="advantages__wrapper">
@@ -123,7 +134,7 @@
                                     Вёрстка
                                 </h3>
                                 <p class="advantages__list-text">
-                                    Качественный код,  легко читаем и в дальнейшем легко поддерживается
+                                    Качественный код, легко читаем и в дальнейшем легко поддерживается
                                 </p>
                             </li>
                             <!-- элемент преимущества -->
@@ -143,9 +154,9 @@
                                     В сроки
                                 </h3>
                                 <p class="advantages__list-text">
-                                    Выполнение проекта в указанные сроки и  без задержек.
+                                    Выполнение проекта в указанные сроки и без задержек.
                                 </p>
-                            </li> 
+                            </li>
                             <!-- элемент преимущества -->
                             <li class="advantages__list-item">
                                 <img class="advantages__list-icon" src="./img/icons/warranty-icon.svg" alt="">
@@ -155,7 +166,7 @@
                                 <p class="advantages__list-text">
                                     Гарантипуем результат соответстующий вашим ожиданиям
                                 </p>
-                            </li> 
+                            </li>
                             <!-- элемент преимущества -->
                             <li class="advantages__list-item">
                                 <img class="advantages__list-icon" src="./img/icons/gift-icon.svg" alt="">
@@ -163,22 +174,25 @@
                                     Подарок
                                 </h3>
                                 <p class="advantages__list-text">
-                                    Каждому заказчику  индивидуальный  подарок. Вы будете довольны
+                                    Каждому заказчику индивидуальный подарок. Вы будете довольны
                                 </p>
-                            </li> 
+                            </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
         <!-- секция с портфолио -->
-        <section class="portfolio height-section">
+        <section class="portfolio">
             <div class="container">
-                <div class="row">
+                <!-- <div class="row"> -->
+
                     <div class="portfolio__wrapper">
+                    <!-- заголовок порфолио -->
                         <h2 class="portfolio__header">Портфолио</h2>
                         <div class="portfolio__list">
+                            
                             <!-- элемент портфолио -->
                             <div class="portfolio__item">
                                 <div class="portfolio__category">
@@ -206,7 +220,6 @@
                                     <img class="portfolio__item-image" src="./img/portfolio-3-min.png" alt="">
                                 </a>
                             </div>
-                            <!-- модальное окно -->
 
                             <!-- элемент портфолио -->
                             <div class="portfolio__item">
@@ -217,14 +230,13 @@
                                     <img class="portfolio__item-image" src="./img/portfolio-4-min.png" alt="">
                                 </a>
                             </div>
+                            
                         </div>
-
-                        <!-- модальное окно -->
-                        
-                        <!-- кнопка смотреть все портфолио -->
                         <a href="#" class="portfolio__button">Смотреть все</a>
+                        <!-- кнопка смотреть все портфолио -->
                     </div>
-                </div>
+
+                <!-- </div> -->
             </div>
         </section>
         <!-- секция с цифрами проектами -->
@@ -245,7 +257,7 @@
                                     Дизайн Проектов
                                 </div>
                             </div>
-                        <!-- элемент цифр проектов -->
+                            <!-- элемент цифр проектов -->
                             <div class="created__item">
                                 <div class="created__item-number">
                                     15
@@ -255,7 +267,7 @@
                                     Сайтов
                                 </div>
                             </div>
-                        <!-- элемент цифр проектов -->
+                            <!-- элемент цифр проектов -->
                             <div class="created__item">
                                 <div class="created__item-number">
                                     7
@@ -285,7 +297,10 @@
                         </div>
                         <!-- описания проектов -->
                         <p class="created__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat sed amet et lobortis sed. Aliquam sapien sed lectus sed ac. Pulvinar hendrerit sagittis, elementum nisl. In fames nisi, maecenas eu viverra tincidunt tellus dictum sapien. Elementum ac quis quisque lectus. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat sed amet et
+                            lobortis sed. Aliquam sapien sed lectus sed ac. Pulvinar hendrerit sagittis, elementum nisl.
+                            In fames nisi, maecenas eu viverra tincidunt tellus dictum sapien. Elementum ac quis quisque
+                            lectus.
                         </p>
                     </div>
                 </div>
@@ -302,13 +317,16 @@
                         <form action="" class="contact__form">
                             <p class="contact__form-title">Задать вопрос</p>
                             <div class="input__name-wrapper">
-                                <input class="contact__form-input" type="text" name="" id="name" name="name" placeholder="Ваше Имя">
+                                <input class="contact__form-input" type="text" name="" id="name" name="name"
+                                    placeholder="Ваше Имя">
                             </div>
                             <div class="input__email-wrapper">
-                                <input class="contact__form-input" type="email" name="email" id="email" placeholder="Ваше Почта">
+                                <input class="contact__form-input" type="email" name="email" id="email"
+                                    placeholder="Ваше Почта">
                             </div>
                             <div class="input__textarea-wrapper">
-                                <textarea class="contact__form-textarea" name="text" id="textarea" placeholder="Ваше сообщение"></textarea>
+                                <textarea class="contact__form-textarea" name="text" id="textarea"
+                                    placeholder="Ваше сообщение"></textarea>
                             </div>
                             <button class="contact__form-button">Написать</button>
                         </form>
@@ -459,12 +477,13 @@
                             Slack
                         </a>
                     </div>
-                    
+
                 </div>
             </div>
             <!-- копирайт -->
             <div class="footer__bottom">
-                <p>&#169 2020 <a href="">vi-ant-studio.ru</a>  При цитировании, пожалуйста, ставьте ссылку на наш сайт.</p>
+                <p>&#169 2020 <a href="">vi-ant-studio.ru</a> При цитировании, пожалуйста, ставьте ссылку на наш сайт.
+                </p>
             </div>
         </div>
     </footer>
@@ -473,71 +492,93 @@
     <!-- модальные окна для портфолио -->
     <!-- 1 -->
     <div class="modal" data-modal="1">
-        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+        </svg>
         <div class="modal__wrapper">
             <div class="modal_txt">
                 <h2>Сайт портфоли Викулова Андрея</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe, amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam ullam pariatur, quis in? Suscipit!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe,
+                    amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam
+                    ullam pariatur, quis in? Suscipit!</p>
             </div>
-            <div class="clearfix"></div>  
+            <div class="clearfix"></div>
             <img class="modal__image" src="./img/portfolio-1-min.png" alt="">
         </div>
-        
+
     </div>
     <!-- 2 -->
     <div class="modal" data-modal="2">
-        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+        </svg>
         <div class="modal__wrapper">
             <div class="modal_txt">
                 <h2>Сайт портфоли Викулова Андрея</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe, amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam ullam pariatur, quis in? Suscipit!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe,
+                    amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam
+                    ullam pariatur, quis in? Suscipit!</p>
             </div>
-            <div class="clearfix"></div>  
+            <div class="clearfix"></div>
             <img class="modal__image" src="./img/portfolio-2-min.png" alt="">
         </div>
-        
+
     </div>
     <!-- 3 -->
     <div class="modal" data-modal="3">
-        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+        </svg>
         <div class="modal__wrapper">
             <div class="modal_txt">
                 <h2>Сайт портфоли Викулова Андрея</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe, amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam ullam pariatur, quis in? Suscipit!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe,
+                    amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam
+                    ullam pariatur, quis in? Suscipit!</p>
             </div>
-            <div class="clearfix"></div>  
+            <div class="clearfix"></div>
             <img class="modal__image" src="./img/portfolio-3-min.png" alt="">
         </div>
-        
+
     </div>
     <!-- 4 -->
     <div class="modal" data-modal="4">
-        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+        </svg>
         <div class="modal__wrapper">
             <div class="modal_txt">
                 <h2>Сайт портфоли Викулова Андрея</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe, amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam ullam pariatur, quis in? Suscipit!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima numquam maiores repudiandae saepe,
+                    amet, voluptate optio provident eveniet assumenda laborum reprehenderit tempora quia doloremque nam
+                    ullam pariatur, quis in? Suscipit!</p>
             </div>
-            <div class="clearfix"></div>  
+            <div class="clearfix"></div>
             <img class="modal__image" src="./img/portfolio-4-min.png" alt="">
         </div>
-        
+
     </div>
     <!-- подложка-->
     <div class="overlay js-overlay-modal"></div>
     <!--/////// модальные окна для портфолио-->
     <!-- куки -->
-    
+
     <div class="cookie_notice">
-        Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для обеспечения работоспособности и улучшения качества обслуживания. Продолжая использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.
+        Этот сайт использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе,
+        местоположении и др.) для обеспечения работоспособности и улучшения качества обслуживания. Продолжая
+        использовать наш сайт, вы автоматически соглашаетесь с использованием данных технологий.
         <div>
             <a class="cookie_btn" id="cookie_close" href="#close">Согласиться</a>
             <a class="cookie_btn" href="#politika">Политика конфиденциальности</a>
         </div>
     </div>
     <div class="exitblock">
-        <div class="fon"></div>    
-        <div class="modaltext">    
+        <div class="fon"></div>
+        <div class="modaltext">
             Уже уходите, посмотрите наш <a href="">блог</a> и <a href="">портфолио</a>.
         </div>
         <div class="closeblock">+</div>
@@ -549,4 +590,5 @@
     <script src="./libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
